@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+.formulario 
+	{
+		width: 96%;
+		border: 1px solid #DADADA;
+		padding: 20px 2%;
+		margin: 35px 0 0 0;
+		background: #F5F5F5;
+	}
+.formulario .QC_Container 
+	{
+		width: 50%;
+		margin: 0 0 20px;
+		min-height: 30px;
+		position: relative;
+	}
+	.formulario .FechaControl 
+		{
+			float: none;
+		}
+.formulario .QC_MarcoPregunta 
+	{
+		width: 100%;
+	}
+.formulario .QC_Etiqueta 
+	{
+		width: 34%;
+		padding: 7px 1% 0 0;
+	}
+	.formulario .FechaControl .QC_Etiqueta 
+		{
+			width: 34%;
+			padding: 0 1% 0 0;
+		}
+	.formulario .TextoAreaControl .QC_Etiqueta 
+		{
+			width: 16.5%;
+			padding: 0 1% 0 0;
+		}
+.formulario .QC_EntradaDatos 
+	{
+		width: 55%;
+	}
+	.formulario .TextoAreaControl .QC_EntradaDatos 
+		{
+			width: 77.5%;
+		}
+.formulario .QC_Calendar_btn 
+	{
+		width: 25px;
+		height: 25px;
+		margin: 3px 0 0 4px;
+	}
+.formulario .QC_EntradaDatos input[type=text],
+.formulario .QC_EntradaDatos input[type=password],
+.formulario .QC_EntradaDatos input[type=email],
+.formulario .QC_EntradaDatos select,
+.formulario .QC_EntradaDatos textarea
+	{
+		border: 1px solid #cfcfcf;
+		color: #606369;
+		float: left;
+		font-weight: lighter;
+		height: 30px;
+		padding: 0 2%;
+		width: 100%;
+		-webkit-border-radius: 0;
+		   -moz-border-radius: 0;
+		    -ms-border-radius: 0;
+		     -o-border-radius: 0;
+		        border-radius: 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		    -ms-box-sizing: border-box;
+		     -o-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+.formulario .QC_EntradaDatos select 
+	{
+		padding: 0 0 0 2%;
+	}
+.formulario .QC_EntradaDatos textarea 
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1em;
+		height: 80px;
+		padding: 5px 2%;
+	}
+	.formulario .FechaControl .QC_EntradaDatos input[type=text] 
+		{
+			width: auto;
+		}
+.formulario .SimpleControl .QC_EntradaDatos table 
+	{
+		width: 100%;
+	}
+.formulario .SimpleControl .QC_EntradaDatos input 
+	{
+		float: left;
+	}
+.formulario .SimpleControl .QC_EntradaDatos label 
+	{
+		float: left;
+		padding: 2px 0 0 5px;
+	}
+.formulario .MultipleControl .QC_EntradaDatos table 
+	{
+		width: 100%;
+	}
+.formulario .MultipleControl .QC_EntradaDatos tr 
+	{
+		float: left;
+		width: 50%;
+	}
+.formulario .MultipleControl .QC_EntradaDatos input 
+	{
+		float: left;
+	}
+.formulario .MultipleControl .QC_EntradaDatos label 
+	{
+		float: left;
+		padding: 2px 0 0 5px;
+	}
+.formulario .TextoAreaControl 
+	{
+		width: 100%;
+	}
+.formulario .centrarBtn 
+	{
+		width: 100%;
+		padding: 20px 0;
+		text-align: center;
+	}
+.formulario .genericBtn 
+	{
+		background: #404040;
+		font-size: 1.2em;
+		padding: 7px 40px;
+		margin: 0 10px;
+		color: #FFF;
+		border: none;
+		cursor: pointer;
+		-webkit-appearance: none;
+		-webkit-border-radius: 3px;
+		   -moz-border-radius: 3px;
+		    -ms-border-radius: 3px;
+		     -o-border-radius: 3px;
+		        border-radius: 3px;
+	}
+.formulario .QC_ValidacionCampos 
+	{
+		float:left;
+		right: 25px;
+		position: absolute;		
+	}
+
+@media only screen and (max-width: 980px) {
+.formulario 
+	{
+		width: 100%;
+		padding: 20px 3%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		    -ms-box-sizing: border-box;
+		     -o-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+.formulario .QC_Container 
+	{
+		width: 100%;
+	}
+.formulario .FechaControl 
+	{
+		float: left;
+	}
+.formulario .QC_Etiqueta 
+	{
+		width: 34%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		    -ms-box-sizing: border-box;
+		     -o-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 11px 1% 0 9%;
+	}
+.formulario .TextoAreaControl .QC_Etiqueta 
+	{
+		width: 34%;
+		padding: 7px 1% 0 9%;
+	}
+.formulario .FechaControl .QC_Etiqueta 
+	{
+		padding: 3px 1% 0 9%;
+	}
+.formulario .QC_EntradaDatos,
+.formulario .TextoAreaControl .QC_EntradaDatos 
+	{
+		width: 58%;
+	}
+.formulario .QC_EntradaDatos textarea 
+	{
+		height: 110px;
+	}
+}
+@media only screen and (max-width: 767px) 
+	{
+.formulario .QC_EntradaDatos input[type="text"], 
+.formulario .QC_EntradaDatos input[type="password"], 
+.formulario .QC_EntradaDatos input[type="email"], 
+.formulario .QC_EntradaDatos select 
+	{
+		height: 40px;
+		font-size: 1.1em;
+	}
+.formulario .QC_EntradaDatos textarea,
+.formulario .SimpleControl .QC_EntradaDatos table,
+.formulario .MultipleControl .QC_EntradaDatos table 
+	{
+		font-size: 1.1em;
+	}
+.formulario .QC_Calendar_btn 
+	{
+		width: 25px;
+		height: 25px;
+		margin: 7px 0 0 4px;
+	}
+
+}
+@media only screen and (max-width: 600px) {
+.formulario .QC_Etiqueta,
+.formulario .TextoAreaControl .QC_Etiqueta 
+	{
+		width: 35%;
+		padding: 7px 1% 0 0;
+	}
+.formulario .FechaControl .QC_Etiqueta 
+	{
+		width: 35%;
+		padding: 0 5% 0 0;
+	}
+.formulario .QC_EntradaDatos,
+.formulario .TextoAreaControl .QC_EntradaDatos 
+	{
+		width: 62%;
+	}
+.formulario .QC_ValidacionCampos 
+	{
+		right: -3px;
+	}
+.formulario .genericBtn 
+	{
+		margin: 0 5px;
+		padding: 7px 30px;
+	}
+}
+@media only screen and (max-width: 480px) {
+.formulario .QC_Etiqueta,
+.formulario .TextoAreaControl .QC_Etiqueta 
+	{
+		width: auto;
+		padding: 0 5px 5px 0;
+	}
+.formulario .FechaControl .QC_Etiqueta 
+	{
+		width: 50%;
+		padding: 0 1% 0 0;
+	}
+.formulario .QC_EntradaDatos,
+.formulario .TextoAreaControl .QC_EntradaDatos 
+	{
+		width: 100%;
+	}
+.formulario .FechaControl .QC_EntradaDatos 
+	{
+		width: 50%;
+	}
+.formulario .FechaControl .QC_EntradaDatos input[type="text"] 
+	{
+		width: 100px;
+	}
+.formulario .SimpleControl .QC_EntradaDatos table,
+.formulario .MultipleControl .QC_EntradaDatos table 
+	{
+		margin: 15px 0 0 0;
+	}
+.formulario .QC_ValidacionCampos 
+	{
+		position: inherit;
+	}	
+.formulario .MultipleControl .QC_EntradaDatos tr 
+	{
+		width: 100%;
+	}
+.formulario .MultipleControl .QC_EntradaDatos td 
+	{
+		padding: 5px 0;
+	}
+}

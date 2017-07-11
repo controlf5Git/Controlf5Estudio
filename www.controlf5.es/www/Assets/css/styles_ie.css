@@ -1,0 +1,199 @@
+.login  .tituloPreguntaDocuments 
+	{
+		background: url(../../Assets/images/ico/ie/ico_arrow_login.png) center bottom no-repeat;
+	}
+
+#showAccordionLogin .remember input 
+	{
+		border: none;
+	}
+#showAccordionLogin .txtEnlazadorDocuments .btnAccess 
+	{
+		border: none;
+		width: 145px;
+		height: 32px;
+		background: url(../../Assets/images/buttons/ie/input_login.png) left top no-repeat;
+	}
+	
+.slide-1 .hps-btnRegistro a,
+.slide-2 .hps-btnRegistro a,
+.slide-3 .hps-btnRegistro a,
+.slide-4 .hps-btnRegistro a 
+	{
+		border: none !important;
+		width: 172px !important;
+		height: 35px !important;
+		line-height: 22px !important;
+		background: url(../../Assets/images/buttons/ie/input_carrusel.png) left top no-repeat !important;
+	}
+
+.boxHighlight 
+	{
+		border: none;
+		width: 226px;
+	}
+.boxHighlight .top 
+	{
+		height: 52px;
+	}
+	.manualMerck .top 
+		{
+			background: url(../../Assets/images/background/highlights/ie/bg_top_manual_merck.png) left bottom no-repeat;
+		}
+	.actualidad .top 
+		{
+			background: url(../../Assets/images/background/highlights/ie/bg_top_actualidad.png) left bottom no-repeat;
+		}
+	.formacion .top 
+		{
+			background: url(../../Assets/images/background/highlights/ie/bg_top_formacion.png) left bottom no-repeat;
+		}
+	.encuestas .top 
+		{
+			background: url(../../Assets/images/background/highlights/ie/bg_top_encuestas.png) left bottom no-repeat;
+		}
+.boxHighlight .repeat 
+	{
+		background: url(../../Assets/images/background/highlights/ie/bg_repeat.png) left top repeat-y;
+		width: 224px;
+		padding: 0 1px;
+	}
+.boxHighlight .description 
+	{
+		width: 204px;
+	}
+.boxHighlight .bottom
+	{
+		background: url(../../Assets/images/background/highlights/ie/bg_bottom.png) left bottom no-repeat;
+	}
+
+.rightColumn .boxHighlight 
+	{
+		background: url(../../Assets/images/background/highlights/ie/bg_bottom.png) left bottom no-repeat;
+	}
+.rightColumn .boxHighlight .bottom 
+	{
+		top: 37px;
+	}
+	.rightColumn .manualMerck .bottom 
+		{
+			background: url(../../Assets/images/background/highlights/separata_manual_merck.png) center top no-repeat;
+		}
+	.rightColumn .actualidad .bottom 
+		{
+			background: url(../../Assets/images/background/highlights/separata_actualidad.png) center top no-repeat;
+		}
+	.rightColumn .formacion .bottom 
+		{
+			background: url(../../Assets/images/background/highlights/separata_formacion.png) center top no-repeat;
+		}
+	.rightColumn .encuestas .bottom 
+		{
+			background: url(../../Assets/images/background/highlights/separata_encuestas.png) center top no-repeat;
+		}
+
+	/*PLANIFICA TU SALUD*/
+	.planificaSalud .menu .info a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/planifica_salud/ie/info_basica.png) left center no-repeat;
+		}
+	.planificaSalud .menu .consejos a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/planifica_salud/ie/consejos_utiles.png) left center no-repeat;
+		}
+	.planificaSalud .menu .saberMas a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/planifica_salud/ie/saber_mas.png) left center no-repeat;
+		}
+
+	/*TU SALUD AL DÍA*/
+	.saludDia .menu .info a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/tu_salud_dia/ie/info_basica.png) left center no-repeat;
+		}
+	.saludDia .menu .consejos a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/tu_salud_dia/ie/consejos_utiles.png) left center no-repeat;
+		}
+	.saludDia .menu .saberMas a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/tu_salud_dia/ie/saber_mas.png) left center no-repeat;
+		}
+
+	/*CUIDADORES*/
+	.cuidadores .menu .info a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/cuidadores/ie/info_basica.png) left center no-repeat;
+		}
+	.cuidadores .menu .consejos a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/cuidadores/ie/consejos_utiles.png) left center no-repeat;
+		}
+	.cuidadores .menu .saberMas a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/cuidadores/ie/saber_mas.png) left center no-repeat;
+		}
+
+	/*PROGRAMAS SALUD*/
+	.programasSalud .menu .info a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/programas_salud/ie/info_basica.png) left center no-repeat;
+		}
+	.programasSalud .menu .consejos a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/programas_salud/ie/consejos_utiles.png) left center no-repeat;
+		}
+	.programasSalud .menu .saberMas a 
+		{
+			background: url(../../Assets/images/ico/menu_interior/programas_salud/ie/saber_mas.png) left center no-repeat;
+		}
+
+.adunits .box
+	{
+		border: none;
+		width: 229px;
+	}
+	.planificaSalud .box .top 
+		{
+			background: url(../../Assets/images/background/adunits/ie/bg_top_planifica_salud.png) left top no-repeat;
+		}
+	.saludDia .box .top 
+		{
+			background: url(../../Assets/images/background/adunits/ie/bg_top_salud_dia.png) left top no-repeat;
+		}
+	.cuidadores .box .top 
+		{
+			background: url(../../Assets/images/background/adunits/ie/bg_top_cuidadores.png) left top no-repeat;
+		}
+	.programasSalud .box .top 
+		{
+			background: url(../../Assets/images/background/adunits/ie/bg_top_programas_salud.png) left top no-repeat;
+		}
+
+.box .repeat 
+	{
+		background: url(../../Assets/images/background/adunits/ie/bg_repeat.png) left top repeat-y;
+	}
+.box .bottom 
+	{
+		background: url(../../Assets/images/background/adunits/ie/bg_bottom.png) left top no-repeat;
+		height: 12px;
+		width: 100%;
+	}
+
+	.planificaSalud .box .description a 
+		{
+			background: url(../../Assets/images/ico/ie/ico_arrow_planifica_salud.png) left top no-repeat;
+		}
+	.saludDia .box .description a 
+		{
+			background: url(../../Assets/images/ico/ie/ico_arrow_salud_dia.png) left top no-repeat;
+		}
+	.cuidadores .box .description a 
+		{
+			background: url(../../Assets/images/ico/ie/ico_arrow_cuidadores.png) left top no-repeat;
+		}
+	.programasSalud .box .description a 
+		{
+			background: url(../../Assets/images/ico/ie/ico_arrow_programas_salud.png) left top no-repeat;
+		}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ControlF5</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+<meta name="description" content="Ponte en contacto con nosotros por teléfono, email o formulario. Cuando conozcamos tus necesidades, podremos asesorarte y enviarte presupuesto sin compromiso.">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="Assets/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="Assets/css/styles_980.css" rel="stylesheet" type="text/css" />
+<link href="Assets/css/styles_767.css" rel="stylesheet" type="text/css" />
+<link href="Assets/css/menu.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Assets/js/functions.js"></script>
+  <!-- COOKIETOOL -->
+  <script type="text/javascript" src="Assets/js/cookietool.js"></script>
+  <!-- COOKIETOOL -->
+</head>
+<body class="contacto">
+
+<!-- HEADER -->
+	<div class="fullHeader">  
+		<div class="header">
+    		<div class="logo"><a href="index.html"><img src="Assets/images/logo.png" alt="Control F5"></a></div>
+    		<h2>Estudio de Diseño</h2>
+  		</div>
+	</div>
+<!-- FIN HEADER --> 
+
+<!-- MENU -->
+<nav w3-include-html="Assets/controls/main_menu.html" class="navbar navbar-inverse"> </nav>
+<!-- FIN MENU --> 
+
+
+
+<!-- ¿QUÉ HACEMOS? -->
+<section>
+  <div class="Fullsection">
+    <div class="section">
+      <div class="infoBox info">
+        	<h1>contacto</h1>
+        	<p>Ponte en contacto con nosotros como prefieras, telefono, email o rellenando el formulario de contacto.</p>
+			<p>Una vez conozcamos tus necesidades, podremos asesorarte y enviarte presupuesto sin compromiso.</p>
+        </div>
+      <div class="infoBox form">
+          <form action="enviar.php" method="post" role="form">
+            <div class="form-group">
+              <input name="nombre" type="Nombre" required class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <input name="email" type="email" required class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <textarea name="mensaje" rows="6" required class="form-control" id="mensaje" placeholder="Mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">&lt;ENVIAR /&gt;</button>
+          </form>
+      </div>
+      <div class="infoBox data">
+      	<img src="Assets/images/icons/ico-contacto-movil.png" alt="Contacto telefonos">
+      	<p class="telf"><span>661 93 88 50</span></p>
+      	<p class="telf"><span>646 11 62 03</span></p>
+      	<img src="Assets/images/icons/ico-contacto-mail.png" alt="Contacto Email">
+      	<p class="mail"><span>contacto@controlf5.es</span></p>
+      	<img src="Assets/images/icons/ico-contacto-redes.png" alt="Contacto Redes sociales">
+      	<div class="socialIcons"> <a href="https://www.facebook.com/controlf5estudio/" target="_blank"><img src="Assets/images/icons/icon-facebook.png" alt="Facebook"></a> <a href="https://twitter.com/controlf5studio" target="_blank"><img src="Assets/images/icons/icon-twitter.png" alt="Twitter"></a> </div>
+	  </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- LEGAL -->
+<section w3-include-html="Assets/controls/footer.html"> </section>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$(".navbar-toggle").toggleClass("active");
+			
+		});
+
+		$(function () {
+    		$(window).bind("resize", function () {
+				var theBody = $("body").height();
+    	    	if(theBody >= 625+90) {
+					$(".Fullsection.legal").addClass("absoInferior");
+					} else {
+    	        	$(".Fullsection.legal").removeClass("absoInferior");
+    	    	}
+    		}).resize();
+		});
+		setTimeout(function(){ $(document).resize(); }, 500);
+		
+	});
+		
+	w3IncludeHTML();
+	CookieTool.Config.set('link', 'cookies.html');
+	CookieTool.API.ask();
+	
+	
+	</script>
+</body>
+</html>

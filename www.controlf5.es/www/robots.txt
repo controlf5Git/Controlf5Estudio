@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /pre/
+Disallow: /Assets/
+
+Sitemap: http://controlf5.es/sitemap.xml

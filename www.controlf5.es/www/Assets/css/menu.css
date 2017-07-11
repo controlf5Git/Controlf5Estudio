@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*________NAVIGATION________*/
+.fullNavigation 
+	{
+		width: 100%;
+		float: left;
+		font-family: 'Raleway', sans-serif;
+	}
+.navigation 
+	{
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
+		float: none;
+		padding: 0 10px;
+		text-align: .collapse.navbar-collapsecenter;
+	}
+.nav,
+.hidelateralMenu,
+.lateralMenuSlide,
+.contentOpen
+	{
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+		/*position: relative;*/
+	}
+
+.navbar {
+    float: left;
+    width: 100%;
+	margin-bottom: 0;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	background: #fff;
+	border: none;
+	min-height: 1px;
+	padding: 0 0 10px;
+}
+.navbar-inverse .navbar-nav>li {
+	width: 33.3%;
+	    text-align: center;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #3e3c3f;
+	padding: 5px 10px;
+	float: none;
+	display: inline-block;
+	-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-bottomleft: 10px;
+			border-bottom-left-radius: 10px;
+	border-left: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #ffa500;
+	border-left: solid 1px #ffa500;
+	border-bottom: solid 1px #ffa500;
+}
+.container-fluid,
+.collapse.navbar-collapse{
+	width: 100%;
+}
+.collapse.navbar-collapse {
+	margin-top: 0 !important;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border: none;
+}
+.navbar-nav {
+	text-align: center;
+}
+.navbar-inverse .navbar-nav>li>a:focus {
+	color: #3e3c3f;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	color: #ffa500;
+	padding: 5px 10px;
+	border-left: solid 1px #ffa500;
+	border-bottom: solid 1px #ffa500;
+	background: #fff;
+}
+.dropdown-menu {
+	top: 120%;
+	border: none;
+	box-shadow: none;
+}
+.caret {
+	    margin-left: 6px;
+}
+.navbar-inverse .navbar-toggle {
+	border: none;
+	margin-top: 0px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background: #3e3c3f;
+	width: 50px;
+    height: 6px;
+    border-radius: 25px;
+	margin: 5px 0;
+	position: absolute;
+    right: 0;
+	-webkit-transition: all 500ms ease;
+	   -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+}
+.navbar-inverse .navbar-toggle .icon-bar1 {
+	width: 43px;
+	top: -2px;
+}
+.navbar-inverse .navbar-toggle .icon-bar3 {
+	width: 38px;
+	top: 20px;
+}
+
+.navbar-inverse .navbar-toggle.active .icon-bar1 {
+	transform: rotate(45deg);
+	top: 0;
+	width: 50px;
+}
+.navbar-inverse .navbar-toggle.active .icon-bar2 {
+	opacity: 0;
+}
+.navbar-inverse .navbar-toggle.active .icon-bar3 {
+	transform: rotate(-45deg);
+	top: 0;
+	width: 50px;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background: #fff;
+}
+
+
+@media only screen and (max-width: 767px) {
+	.logo img {
+		width: 75px;
+		margin-left: 10px;
+	}
+	.navbar-header {
+		float: right;
+	}
+	.fullHeader {
+		width: auto;
+		position: absolute;
+		z-index: 999;
+		background: none;
+	}
+	.header {
+		padding: 0;
+	}
+	.navbar {
+		padding: 20px 0 25px;
+	}
+	.navbar-inverse .navbar-nav>li {
+		width: 100%;
+		background: #fff;
+		font-size: 20px;
+		adding: 5px 0;
+	}
+	.navbar-inverse .navbar-nav>li:hover {
+		background: #ccc;
+		color: #fff;
+	}
+	.navbar-inverse .navbar-nav>li>a {
+		padding: 10px 10px;
+	}
+	.navbar-inverse .navbar-nav>li>a:hover {
+		border: none;
+		background: #ccc;
+		color: #fff;
+	}
+	.container-fluid {
+		padding: 0;
+	}
+	.container-fluid>.navbar-header {
+		margin: 0;
+	}
+	.navbar-collapse {
+		width: 100%;
+		margin: 40px 0 0 0 !important;
+		padding: 0;
+	}
+	.navbar-nav {
+		margin: 0;
+	}
+	.navbar-inverse .navbar-nav>li:hover,
+	.navbar-inverse .navbar-nav>li>a:hover {
+		background-color: #fff;
+		color: #3e3c3f;
+	}
+	.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+		border: none;
+	}
+.collapse.navbar-collapse {
+    margin-top: 40px !important;
+}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: #262626;
+	}
+}
+
+
+
+

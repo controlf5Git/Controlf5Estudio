@@ -1,0 +1,128 @@
+/* Scss Document */
+@media only screen and (max-width: 767px) {
+  a:hover {
+    text-decoration: none; }
+
+  .header {
+    padding: 10px 0;
+    height: auto; }
+
+  .col60 {
+    width: 50%; }
+
+  .col40 {
+    width: 50%; }
+
+  .header h2 {
+    width: auto;
+    float: right;
+    margin: 25px 0 0 10px; }
+
+  .dropdown-menu {
+    background-color: white; }
+
+  .dropdown-menu li a {
+    text-align: left; }
+
+  /*_________HOME_________*/
+  .homeBox {
+    width: 50%;
+    padding: 25px 15px; }
+
+  .homeBox img {
+    max-width: 100px; }
+
+  .header h1 {
+    float: right;
+    margin: 25px 0 0 10px; }
+
+  /*_________GALERIA________*/
+  .galeryBox4 .miniature {
+    padding: 10px; }
+
+  .masServicios .homeBox img {
+    max-width: 80px; }
+
+  .galeryBox {
+    width: 48%;
+    margin: 0 1%; }
+
+  .galeryBox3, .galeryBox4, .galeryBox5 {
+    width: 96%;
+    margin: 10px 2% 0; }
+
+  .galeryBox3 .miniature {
+    height: 310px; }
+
+  /*.galeryBox p {
+  	width: 100%;
+  	opacity: 0.8;
+  	height: auto;
+  	padding: 10px 0;
+  }*/
+  .galeryBox p a {
+    font-size: 0.9em;
+    font-weight: normal; }
+
+  .galeryBox p {
+    width: 100%;
+    opacity: 0.8;
+    height: auto;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none; }
+
+  .galeryBox p a span {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    padding: 8px 0 0 0;
+    background-color: #666;
+    left: 0; }
+
+  .galeryRow .hidePc {
+    margin: 0 1%;
+    width: 98%; }
+
+  /*_________3D - VISITA VIRTUAL________*/
+  .portfolio3d .galeryBox1,
+  .portfolio3d .galeryBox4 {
+    width: 58%;
+    margin: 0 1%; }
+
+  .portfolio3d .galeryBox2,
+  .portfolio3d .galeryBox3 {
+    width: 38%;
+    margin: 0 1%; }
+
+  .portfolio3d .galeryBox3 .miniature,
+  .portfolio3d .galeryBox4 .miniature {
+    height: 220px;
+    margin-top: 10px; }
+
+  .galeryBox1.virtual {
+    width: 98%; }
+
+  /*_________HOME CONTACTO_________*/
+  .Fullsection.contactHome .section {
+    max-width: 80%; }
+
+  /*_________CONTACTO________*/
+  .infoBox {
+    width: 100%; }
+
+  .infoBox.form {
+    width: 100%; }
+
+  .infoBox.data {
+    width: 100%; }
+
+  .form {
+    padding: 35px 10px 0; }
+
+  .mas.gracias {
+    padding: 20px 0;
+    font-size: 1.5em; } }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ControlF5</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="Assets/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="Assets/css/styles_980.css" rel="stylesheet" type="text/css" />
+<link href="Assets/css/styles_767.css" rel="stylesheet" type="text/css" />
+<link href="Assets/css/menu.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Assets/js/functions.js"></script>
+  <!-- COOKIETOOL -->
+  <script type="text/javascript" src="Assets/js/cookietool.js"></script>
+  <!-- COOKIETOOL -->
+</head>
+<body class="contacto">
+
+<!-- HEADER -->
+<div class="fullHeader">
+  <div class="header">
+    <div class="logo"><a href="#"><img src="Assets/images/logo.png" alt="Control F5"></a></div>
+  </div>
+</div>
+<!-- FIN HEADER --> 
+
+<!-- MENU -->
+<nav w3-include-html="Assets/controls/main_menu.html" class="navbar navbar-inverse"> </nav>
+<!-- FIN MENU --> 
+
+
+
+<!-- ¿QUÉ HACEMOS? -->
+<section>
+  <div class="Fullsection">
+    <div class="section">   
+      
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- LEGAL -->
+<section w3-include-html="Assets/controls/footer.html"> </section>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$(".navbar-toggle").toggleClass("active");
+		});	
+	});
+		
+	w3IncludeHTML();
+	CookieTool.Config.set('link', 'cookies.html');
+	CookieTool.API.ask();
+	
+</script>
+	
+</body>
+</html>

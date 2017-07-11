@@ -5,7 +5,26 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFE3B0CC-44C7-486D-B9AF-E8A79BA3DB15}"
 	ProjectSection(SolutionItems) = preProject
-		index.html = index.html
+		www\3d-visita-virtual.html = www\3d-visita-virtual.html
+		www\animated_favicon1.gif = www\animated_favicon1.gif
+		www\avisolegal.html = www\avisolegal.html
+		www\contacto.html = www\contacto.html
+		www\cookies.html = www\cookies.html
+		www\diseno-grafico.html = www\diseno-grafico.html
+		www\diseno-web.html = www\diseno-web.html
+		www\enviar.php = www\enviar.php
+		www\favicon.ico = www\favicon.ico
+		www\game-dark-raider.html = www\game-dark-raider.html
+		www\game-visita-virtual.html = www\game-visita-virtual.html
+		www\generalemplate.html = www\generalemplate.html
+		www\gracias.html = www\gracias.html
+		www\home.html = www\home.html
+		www\index.html = www\index.html
+		www\mini-juegos.html = www\mini-juegos.html
+		www\Plantillagaleria.html = www\Plantillagaleria.html
+		www\privacidad.html = www\privacidad.html
+		www\robots.txt = www\robots.txt
+		www\sitemap.xml = www\sitemap.xml
 	EndProjectSection
 EndProject
 Global

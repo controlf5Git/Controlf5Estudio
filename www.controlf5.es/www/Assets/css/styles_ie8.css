@@ -1,0 +1,16 @@
+.loginBox input[type="text"], 
+.loginBox input[type="email"], 
+.loginBox input[type="password"] 
+	{
+		line-height: 45px;
+	}
+.searcher input 
+	{
+		line-height: 30px;
+	}
+.formulario .QC_EntradaDatos input[type="text"], 
+.formulario .QC_EntradaDatos input[type="password"], 
+.formulario .QC_EntradaDatos input[type="email"]
+	{
+		line-height: 30px;
+	}

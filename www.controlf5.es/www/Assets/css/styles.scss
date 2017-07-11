@@ -1,0 +1,855 @@
+$colorA: #fff; //Blanco
+$colorB: #ffa500; //Naranja
+$colorC: #ccc; //gris claro
+$colorD: #3e3c3f; //gris oscuro
+$colorE: #fa14fb;
+$colorF: #78ff0e;
+$colorG: #000;
+$colorLine:#878787;
+// FONTS 
+$primaryFont:  'Raleway', sans-serif;
+$secundaryFont: 'Asap', sans-serif;
+// EXTRAS
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+               box-shadow:$top $left $blur $color #{$inset};
+    }
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+      -moz-box-sizing: $box-model;
+               box-sizing: $box-model;
+}
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+	 -moz-transform: $transforms;
+	  -ms-transform: $transforms;
+	      transform: $transforms;
+}
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+
+/* Scss Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	@include box-sizing(border-box);
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	@include box-sizing(border-box);
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	line-height: 1;
+	font-family: $secundaryFont;
+	width: 100%;
+	height: 100%;
+}
+div {
+	float: left;
+}
+ol, ul {
+	list-style: none; 
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img 
+	{
+		border: none;
+		width: 100%;
+		height: auto;
+	}
+h2 {
+	font-family: $primaryFont;
+	color: $colorB;
+    font-size: 1.5em;
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 10px 0 5px;
+}
+h3 {
+	font-family: $primaryFont;
+}
+.col100 {
+	width: 100%;
+}
+.col60 {
+	width: 60%;
+}
+.col50 {
+	width: 50%;
+}
+.col40 {
+	width: 40%;
+}
+.col33 {
+	width: 33%;
+}
+.total 
+	{
+		width: 100%;
+		height: 100%;
+}
+.titlePortfolio {
+	color: $colorB;
+	width: 100%;
+	float: left;
+	padding: 15px 0 10px;
+	text-align: center;
+	font-size: 1.5em;
+	border-bottom: $colorB solid 1px;
+}
+/*________HEADER_________*/
+.fullHeader 
+	{
+		width: 100%;
+		background: $colorA;
+	}
+.header 
+	{
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
+		float: none;
+		padding: 0 10px;
+		text-align: center;
+	}
+.logo 
+	{
+		display: inline-block;
+		float: none;
+		margin: 10px 0;
+	}
+.header h1 {
+    color: $colorC;
+    margin: 0 0 10px 0;
+}
+.header h2 {
+    padding: 0;
+	margin: 0 0 10px 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit; 
+    vertical-align: baseline;
+    color: $colorC;   
+}
+.dropdown-menu {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+.dropdown-menu li a {
+    text-align: center;
+}
+/*_________HOME_________*/
+
+.Fullsection {
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+.section {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	float: none;
+	padding: 0 10px;
+}
+.Fullsection.portada {
+	position: relative;
+	padding: 0;
+	background: url(../images/background/home-bg.jpg) no-repeat center center;
+	background-size: cover;
+    height: 85vh;
+}
+.iconDown {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+} 
+.iconDown img {
+    width: 35px;
+}
+.Fullsection.portada .section {
+	width: 100%;
+	/*height: 600px;*/
+	
+}
+
+/*_________¿QUÉ HACEMOS?_________*/
+
+.Fullsection.servicios {
+	background: $colorD;
+}
+/*.homeBox {
+	width: 33.33%;
+	padding: 25px;
+	text-align:  center;
+	color: $colorA;
+}
+.homeBox img {
+	max-width: 120px;
+	display: inline-block;
+}
+.homeBox h3 {
+	width: 100%;
+	background: url(../images/background/white-line.jpg) left center repeat-x;
+	margin: 15px 0 10px;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+.homeBox h3 p {
+	background: $colorD;
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0;
+}
+.homeBox .description {
+	text-align: left;
+	font-size: 1em;
+	line-height: 1.3em;
+	font-family: $secundaryFont;
+	color: #e0e0e0;
+}*/
+.homeBox {
+	width: 25%;
+	padding: 10px;
+	text-align:  center;
+	color: $colorA;
+}
+.homeBox img {
+	max-width: 100px;
+	display: inline-block;
+}
+.homeBox h3 {
+	width: 100%;
+	background: url(../images/background/white-line.jpg) left center repeat-x;
+	margin: 15px 0 10px;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+.homeBox h3 p {
+	background: $colorD;
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0;
+}
+.homeBox .description {
+	text-align: left;
+	font-size: 0.9em;
+	line-height: 1.3em;
+	font-family: $secundaryFont;
+	color: #e0e0e0;
+}
+.homeBox .link {
+	width: 100%;
+}
+.homeBox .link a {
+	float: right;
+	color: $colorA;
+	font-size: 0.8em;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: solid 1px $colorA;
+	padding: 5px 20px;
+	margin-top: 5px;
+	@include border-radius(8px);
+	-webkit-transition: all 500ms ease;
+	   -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+}
+.homeBox .link a:hover {
+    background: #ffa500;
+}
+
+/*_________HOME CONTACTO_________*/
+.Fullsection.contactHome {
+	background: $colorA;
+}
+.Fullsection.contactHome .section {
+	width: 100%;
+	max-width: 60%;
+}
+.Fullsection.contactHome .title {
+	font-size: 1.4em;
+	margin: 10px 0 25px;
+}
+.btnContact {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.btnContact a {
+	display: inline-block;
+	background: $colorB;
+	color: $colorA;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+			border-radius: 8px;
+	transition:padding 1s;
+  	-moz-transition:padding 1s;
+  		-ms-transition:padding 1s;
+ 		 	-webkit-transition:padding 1s;
+  				-o-transition:padding 1s;
+}
+
+.btnContact a:hover {
+	padding: 20px 40px;
+	background: #9175a7;
+}
+
+/*_________REDES SOCIALES_________*/
+.Fullsection.rrss {
+	background: #c9c9c9;
+}
+.socialIcons {
+	width: 100%;
+	text-align: center;
+}
+.socialIcons img {
+	width: auto;
+	float: none;
+	display: inline-block;
+	margin: 0 15px;
+}
+
+/*_________LEGAL_________*/
+.Fullsection.legal {
+	background: $colorD;
+	color: $colorA;
+	font-size: 0.8em;
+}
+.Fullsection.legal p {
+	margin: 8px 0;
+}
+.Fullsection.legal p a {
+    color: #fff;
+}
+
+/*_________EN CONSTRUCCION_________*/
+.fullHeader.construction .logo {
+	margin-bottom: 0;
+}
+.Fullsection.construction {
+	padding: 0;
+}
+.Fullsection.construction img {
+	width: 100%;
+	max-width: 900px;
+	padding: 0;
+}
+.Fullsection.construction P {
+	font-family: $secundaryFont;
+	font-size: 24px;
+    padding: 15px 0;
+	color: $colorD;
+}
+
+/*_________GALERIA________*/
+.Fullsection.portadaDesign {
+	background: #ccc;
+}
+.Fullsection.portadaDesign .section {
+	width: 100%;
+	height: 85px;
+}
+.Fullsection.potfolio .description {
+	margin: 10px 0 30px;
+	line-height: 1.3em;
+}
+.galeryRow {
+	width: 100%;
+	max-width: 800px;
+	float: none;
+    margin: 0 auto;
+}
+.galeryBox {
+    width: 50%;
+    float: left;
+    padding: 0;
+	position: relative;
+}
+.galeryBox3 {
+	width: 100%;
+}
+.galeryBox4,
+.galeryBox5 {
+	width: 100%;
+}
+.miniature {
+    width: 100%;
+    height: 220px;
+    display: block;
+    background: #eaeaea url("../images/mockups/bg/landing-bg.jpg") center center no-repeat; 
+	background-size: 60% auto;
+	-webkit-transition: background-size 0.8s ease-in;
+       -moz-transition: background-size 0.8s ease-in;
+            transition: background-size 0.8s ease-in;
+}
+.galeryBox:hover .miniature {
+	background-size: 110% auto;
+}
+.miniature.respon {
+    background-size: auto 100%;
+}
+.galeryBox2 .miniature {
+	background: #cecece url("../images/mockups/bg/email-responsive-bg.jpg") center center no-repeat;
+	background-size: 90% auto;
+}
+.galeryBox3 .miniature {
+	background: #c4c4c4 url("../images/mockups/bg/web-wordpress-bg.jpg") center center no-repeat;
+	background-size: 80% auto;
+	height: 300px;
+}
+.galeryBox4 .miniature {
+	background: #eaeaea url("../images/mockups/bg/web-joomla-bg.jpg") center center no-repeat;
+	background-size: 90% auto;
+	height: 150px;
+}
+.galeryBox5 .miniature {
+	background: #cecece url("../images/mockups/bg/web-html-bg.jpg") center center no-repeat;
+	background-size: 60% auto;
+	height: 150px;
+}
+.galeryBox p {
+	opacity: 0;
+	transition:opacity 0.5s linear;
+	background-color: #666;
+	width: 100%;
+	height: 100%;
+    position: absolute;
+	bottom: 0;
+}
+.galeryBox p a {
+	color: #fff;
+	width: 100%;
+	height: 100%;    
+	font-size: 1.1em;
+    font-weight: bold;
+	display: block;
+	cursor: pointer;
+	text-transform: uppercase;
+	-ms-display: flex;
+  	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.galeryBox p a:hover {
+	text-decoration: none;
+}
+.galeryBox:hover p {
+	opacity: 0.8;
+}
+p.first {
+    opacity: 1;
+    position: absolute;
+    top: 46%;
+    height: initial;
+    background: none;
+	font-weight: bold;
+}
+.galeryBox:hover li p.first { 
+	opacity: 0; 
+}
+/*_________3D - VISITA VIRTUAL________*/
+.portfolio3d .galeryBox1 {
+    width: 60%; 
+}
+.portfolio3d .galeryBox2 {
+    width: 40%; 
+}
+.portfolio3d .galeryBox3 {
+    width: 40%; 
+}
+.portfolio3d .galeryBox4 {
+    width: 60%; 
+}
+.portfolio3d .miniature {
+    background: #eaeaea url("../images/mockups/bg/carboneras-3d-bg.jpg") center center no-repeat; 
+	background-size: 50% auto;
+	height: 220px;
+}
+.portfolio3d .galeryBox1 .miniature {
+    background: #eaeaea url("../images/mockups/bg/carboneras-3d-bg.jpg") center center no-repeat;
+	background-size: 55% auto;
+}
+.portfolio3d .galeryBox2 .miniature {
+    background: #cecece url("../images/mockups/bg/itida-virtual-bg.jpg") center center no-repeat; 
+	background-size: 65% auto;
+}
+.portfolio3d .galeryBox3 .miniature {
+    background: #cecece url("../images/mockups/bg/pronails-visita-virtual-bg.jpg") center center no-repeat;
+	background-size: 65% auto;
+}
+.portfolio3d .galeryBox4 .miniature {
+    background: #e2e2e2 url("../images/mockups/bg/intertronic-3d-bg.jpg") center center no-repeat;
+	background-size: 60% auto;
+}
+.portfolio3d .galeryBox1.virtual .miniature {
+    background: #cecece url("../images/mockups/bg/visita-virtual-bg.jpg") center center no-repeat;
+	background-size: 50% auto;
+}
+.portfolio3d .galeryBox2.virtual .miniature {
+    background: #e2e2e2 url("../images/icons/ico-3d.png") center center no-repeat;
+	background-size: 35% auto;
+}
+ .galeryRow .hidePc {
+    width: 100%;
+	display: none;
+}
+
+.portfolio3d .galeryBox:hover .miniature {
+	background-size: 90% auto;
+}
+body.desktop .movile {
+    display: none;
+}
+body .movile {
+    display: block;
+}
+.Fullsection.game.desk {
+    display: none;
+}
+.desktop .Fullsection.game.desk { 
+    display: block;
+}
+
+/*_________MINI JUEGOS________*/
+.portfolioMinijuegos .galeryBox1 {
+    width: 60%; 
+}
+.portfolioMinijuegos .galeryBox2 {
+    width: 40%; 
+}
+.portfolioMinijuegos .galeryBox1.virtual .miniature {
+    background: #cecece url("../images/mockups/bg/mini-juego-bg.jpg") center center no-repeat;
+	background-size: 50% auto;
+}
+.portfolioMinijuegos .galeryBox2.virtual .miniature {
+    background: #e2e2e2 url("../images/icons/ico-mini-juegos.png") center center no-repeat;
+	background-size: 35% auto; 
+}
+.portfolioMinijuegos .galeryBox:hover .miniature {
+	background-size: 90% auto;
+}
+/*_________DISEÑO GRÁFICO________*/
+.portfolioGrafico .miniature {
+    background: #eaeaea url("../images/mockups/bg/cartel-certamen-bg.jpg") center center no-repeat;  
+	background-size: 45% auto;
+}
+.portfolioGrafico .galeryBox2 .miniature {
+	background: #cecece url("../images/mockups/bg/folleto-2008-bg.jpg") center center no-repeat; 
+	background-size: 50% auto;
+}
+.portfolioGrafico .galeryBox3 .miniature {
+    background: #cecece url("../images/mockups/bg/branding-moves-bg.jpg") center center no-repeat; 
+	background-size: 50% auto;
+}
+.portfolioGrafico .galeryBox4 .miniature {    
+	background: #eaeaea url("../images/mockups/bg/verano-2006-bg.jpg") center center no-repeat; 
+	background-size: 40% auto;
+}
+.portfolioGrafico .galeryBox5 .miniature {
+    background: #cecece url("../images/mockups/bg/cabalgata-2006-bg.jpg") center center no-repeat; 
+	bbackground-size: 25% auto;	
+}
+.portfolioGrafico .galeryBox:hover .miniature {
+	background-size: 100% auto;
+}
+
+
+/*_________MÁS SERVICIOS________*/
+.masServicios .section {
+	width: 100%;
+	max-width: 800px;
+}
+.masServicios .homeBox {
+	width: 33.33%;
+	padding: 10px 30px;
+}
+.masServicios .homeBox img {
+	max-width: 90px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.masServicios .homeBox h3 {
+	background: none;
+	margin: 10px 0 15px;
+	transition: color 0.5s ease;
+}
+.masServicios .homeBox h3 a {
+	color: #fff;
+	line-height: 1.3em;
+    -webkit-transition: color 500ms ease;
+    -moz-transition: color 500ms ease;
+    -ms-transition: color 500ms ease;
+    -o-transition: color 500ms ease;
+    transition: color 500ms ease;
+}
+.masServicios .homeBox:hover img {
+	max-width: 75px;
+}
+.masServicios .homeBox:hover h3 a {
+	font-size: 1.1em;
+	color: #ffa500;
+}
+.masServicios .homeBox h3 a:hover {
+	text-decoration: none;
+}
+.masServicios .homeBox .link a {
+	float: none;
+}
+/*_________GAME PAGE________*/
+.gameRow {
+    width: 100%;
+    max-width: 1024px;
+    float: none;
+    margin: 0 auto;
+}
+
+/*_________CONTACTO________*/
+.contacto .Fullsection.portada .section {
+    height: 1px;
+}
+.infoBox {
+    padding: 0 10px;
+	width: 35%;
+}
+.infoBox.info {
+    width: 100%;
+}
+.infoBox.form {
+    width: 75%;
+    float: right;
+}
+.info h1 {
+    text-align: left;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+}
+.info p {
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.2em;
+    margin: 0 0 5px 0;
+}
+.info img {
+    max-width: 150px;
+    padding: 25px 0 0 0;
+}
+.form {
+    padding: 65px 10px 0;
+} 
+.form-group {
+    width: 100%;
+}
+.form-control:focus {
+    border-color: $colorB;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,165,0,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255,165,0,.6);
+}
+.infoBox.data {
+    width: 25%;
+    padding: 40px 10px 0;
+}
+.data p {
+    margin: 10px 0 0 0;
+    font-size: 1.1em;
+}
+.data p span {
+    width: 100%;
+    display: block;
+	color: $colorD;
+}
+.data img {
+    max-width: 130px;
+    margin: 13px 0 0 0;
+    background: $colorC;
+}
+.data .socialIcons img {
+    max-width: 40px;
+    background: none;
+}
+textarea {
+    resize: none;
+}
+button.btn.btn-default {
+    float: right;
+    background-color: $colorD;
+    color: $colorA;
+    font-size: 0.8em;
+    padding: 8px 20px;
+    border-color: inherit;
+	-webkit-transition: all 300ms ease;
+	   -moz-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+         -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+}
+button.btn.btn-default:hover {
+	background-color: $colorB;
+}
+.absoInferior {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+.mas {
+    width: 100%;
+    padding: 30px 0 0 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+.mas.gracias {
+    padding: 225px 0;
+}
+/*_________COOKIES________*/
+.cookietool-message {
+    position: fixed;
+    width: 100%;
+    padding: .5em;
+    text-align: center;
+    background: $colorD;
+    border-top: solid 5px $colorB;
+    color: $colorB;
+}
+.cookietool-message-top {
+	border-bottom-width: 1px;
+	bottom: 0;
+}
+.cookietool-message-bottom {
+	border-top-width: 1px solid;
+	bottom: 0;
+}
+.cookietool-message p {
+	margin: 0;
+	margin-bottom: .5em;
+}
+.cookietool-message a {
+    color: #fff;
+}
+.cookietool-message button {
+    color: $colorA;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px $colorA;
+    padding: 5px 20px;
+    margin-top: 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    background: $colorD;
+}
+.section.legal {
+    padding: 0 10px 20px;
+}
+.legal nav {
+    width: 100%;
+    float: left;
+}
+.section.legal .back {
+    float: right;
+    color: #312e32;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    margin-top: 5px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+	background: url("../images/icons/ico-mini-back.png") 69px center no-repeat;
+}
+.section.legal h2, .section.legal p, .section.legal a {
+    text-align: left;
+    line-height: 1.2em;
+}
+.section.legal h1 {
+    color: $colorB;
+    text-align: center;
+    font-size: 2em;
+}
+.section.legal h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+.section.legal a {
+    text-decoration: underline;
+    margin: 5px 0;
+    display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+		.galeryBox1.virtual {
+    width: 100%;
+}
+	.galeryBox2.virtual {
+    display: none;
+}
+.galeryRow .hidePc {
+    display: block;
+    float: left;
+    padding: 10px 0;
+    color: white;
+    background: #3e3c3f;
+}
+}

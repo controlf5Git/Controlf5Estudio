@@ -1,0 +1,78 @@
+@media only screen and (max-width: 500px) {
+  .contextualMenu li:first-child span {
+    line-height: 1.7em; }
+
+  .contextualMenu li span {
+    line-height: 1.2em; }
+
+  .contextualMenu img {
+    margin: 4px 5px 0 0; }
+
+  .contextualMenu li:first-child img {
+    margin: 0 5px 0 0; }
+
+  .homeBox {
+    width: 100%;
+    padding: 25px 15px; }
+
+  .homeBox img {
+    max-width: 80px; }
+
+  .col60, .col40 {
+    width: 100%; }
+
+  /*_________HOME CONTACTO_________*/
+  .Fullsection.contactHome .section {
+    max-width: 98%; }
+
+  /*_________EN CONSTRUCCION_________*/
+  .Fullsection.construction P {
+    font-size: 18px; }
+
+  /*_________GALERIA________*/
+  .galeryBox {
+    width: 100%;
+    margin: 10px 0; }
+
+  .miniature,
+  .galeryBox3 .miniature,
+  .galeryBox4 .miniature,
+  .galeryBox5 .miniature {
+    height: 200px; }
+
+  .masServicios .homeBox {
+    width: 100%;
+    padding: 20px 10px; }
+
+  /*_________3D - VISITA VIRTUAL________*/
+  .portfolio3d .galeryBox3 .miniature,
+  .portfolio3d .galeryBox4 .miniature {
+    margin-top: 0px; }
+
+  .portfolio3d .galeryBox {
+    width: 100%;
+    margin: 10px 0; }
+
+  /*	.portfolioMinijuegos .galeryBox1.virtual .miniature, .portfolio3d .galeryBox1.virtual .miniature {
+      background-size: 70% auto;
+  }*/ }
+@media only screen and (max-width: 340px) {
+  .contextualMenu a {
+    text-align: center;
+    height: 58px;
+    display: block; }
+
+  .contextualMenu img {
+    margin: 5px 0 2px !important;
+    float: none; }
+
+  .contextualMenu a span {
+    display: block;
+    line-height: 1.1em; }
+
+  .login .tituloPreguntaDocuments img {
+    width: 25px; }
+
+  .logged .tituloPreguntaDocuments span {
+    font-size: 0.7em;
+    height: 33px; } }
